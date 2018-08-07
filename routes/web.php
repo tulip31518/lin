@@ -62,3 +62,7 @@ Route::get('role',[
  Route::post('create', 'StudentController@insert');
 
  Route::get('view_records', 'StudViewController@index');
+
+ Route::get('edit_records', 'StudUpdateController@index');
+ Route::get('edit/{id}', 'StudUpdateController@show');
+ Route::post('edit/{id}', 'StudUpdateController@edit');
