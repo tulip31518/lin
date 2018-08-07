@@ -33,9 +33,7 @@ Route::get('role',[
  Route::resource('my','MyController');
  Route::resource('test','ImplicitController');
 
- class MyClass{
-    public $foo = 'bar';
- };
+ 
  Route::get('/myclass','ImplicitController@index');
  Route::get('/foo/bar','UriController@index');
 
@@ -59,3 +57,6 @@ Route::get('role',[
  Route::get("redirect", function(){
      return redirect()->action('RedirectController@index');
  });
+
+ Route::get('insert','StudentController@insertForm');
+ Route::post('create', 'StudentController@insert');
