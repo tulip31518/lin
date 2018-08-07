@@ -60,3 +60,5 @@ Route::get('role',[
 
  Route::get('insert','StudentController@insertForm');
  Route::post('create', 'StudentController@insert');
+
+ Route::get('view_records', 'StudViewController@index');
