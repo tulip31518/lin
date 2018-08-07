@@ -36,4 +36,11 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+	
+    public function FuncName(Request $request)
+    {   
+      // log something to storage/logs/laravel.log
+      Log::useDailyFiles(storage_path().'/logs/debug.log');
+      Log::info(['Request'=>$request]);    
+    }
 }

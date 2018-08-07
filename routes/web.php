@@ -69,3 +69,7 @@ Route::get('role',[
 
  Route::get('delete_records', 'StudDeleteController@index');
  Route::get('delete/{id}', 'StudDeleteController@destroy');
+
+ Route::get('/form',function(){
+    return view('form');
+ });
