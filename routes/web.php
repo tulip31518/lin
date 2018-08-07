@@ -66,3 +66,6 @@ Route::get('role',[
  Route::get('edit_records', 'StudUpdateController@index');
  Route::get('edit/{id}', 'StudUpdateController@show');
  Route::post('edit/{id}', 'StudUpdateController@edit');
+
+ Route::get('delete_records', 'StudDeleteController@index');
+ Route::get('delete/{id}', 'StudDeleteController@destroy');
