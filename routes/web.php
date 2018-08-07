@@ -46,3 +46,11 @@ Route::get('role',[
 
  Route::get('/cookie/get', 'CookieController@getCookie');
  Route::get('/cookie/set', 'CookieController@setCookie');
+
+ Route::get('/test', ['as'=>'testing',function(){
+    return view('test2');
+ }]);
+ 
+ Route::get('redirect',function(){
+    return redirect()->route('testing');
+ });
