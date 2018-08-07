@@ -73,3 +73,5 @@ Route::get('role',[
  Route::get('/form',function(){
     return view('form');
  });
+
+ Route::get('localization/{locale}','LocalizationController@index');
