@@ -54,3 +54,8 @@ Route::get('role',[
  Route::get('redirect',function(){
     return redirect()->route('testing');
  });
+
+ Route::get("rr", 'RedirectController@index');
+ Route::get("redirect", function(){
+     return redirect()->action('RedirectController@index');
+ });
