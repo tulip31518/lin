@@ -75,3 +75,7 @@ Route::get('role',[
  });
 
  Route::get('localization/{locale}','LocalizationController@index');
+
+ Route::get('session/get', 'SessionController@accessSessionData');
+ Route::get('session/store', 'SessionController@storeSessionData');
+ Route::get('session/remove', 'SessionController@deleteSessionData');
