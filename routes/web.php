@@ -94,3 +94,6 @@ Route::get('role',[
  Route::get('/facadeex', function(){
     return TestFacades::testingFacades();
  });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
