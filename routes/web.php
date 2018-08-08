@@ -84,4 +84,9 @@ Route::get('role',[
  Route::post('/validation','ValidationController@validateform');
 
  Route::get('/uploadfile','UploadFileController@index');
-Route::post('/uploadfile','UploadFileController@showUploadFile');
+ Route::post('/uploadfile','UploadFileController@showUploadFile');
+
+ Route::get('ajax',function(){
+    return view('message');
+ });
+ Route::post('/getmsg','AjaxController@index');
