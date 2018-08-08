@@ -161,7 +161,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        
+        App\Providers\TestFacadesServiceProvider::class,       
 
     ],
 
@@ -214,6 +214,7 @@ return [
 
         'Form' => Collective\Html\FormFacade\Validator::class,
         'Html' => Collective\Html\HtmlFacade\View::class,
+        'TestFacades' => App\Test\Fecades\TestFacade\View::class,
     ],
 
     'log'=>'daily',
